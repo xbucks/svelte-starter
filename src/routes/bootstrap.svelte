@@ -15,16 +15,10 @@
 </script>
 
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { Button, Form, FormGroup, FormText, Input, Label } from 'sveltestrap';
-  import { cars } from '../stores';
 
   let inputValue = 'Some plain text';
   let radioGroup;
-
-  onMount(async () => {
-    $cars = "Eve";
-  });
 
   const handleSubmit = () => {
     console.log(inputValue);
@@ -37,8 +31,6 @@
 
 <div class="content">
 	<h1>How to Use Bootstrap Components</h1>
-
-  <p>{$cars}</p>
 
   <Form>
     <FormGroup>
