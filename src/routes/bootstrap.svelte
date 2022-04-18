@@ -32,11 +32,11 @@
 </script>
 
 <svelte:head>
-	<title>Examples</title>
+	<title>Bootstrap</title>
 </svelte:head>
 
 <div class="content">
-	<h1>Examples of state management</h1>
+	<h1>How to Use Bootstrap Components</h1>
 
   <p>{$cars}</p>
 
