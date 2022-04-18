@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+	import { Button, Col, Row } from 'sveltestrap';
 	import Counter from '$lib/Counter.svelte';
 </script>
 
@@ -25,6 +26,12 @@
 	<h2>
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
+
+	<Row>
+		<Col>
+			<Button color="primary" outline>Hello World!</Button>
+		</Col>
+	</Row>
 
 	<Counter />
 </section>
