@@ -19,11 +19,16 @@
   import { Button, Form, FormGroup, FormText, Input, Label } from 'sveltestrap';
   import { cars } from '../stores';
 
+  let inputValue = 'Some plain text';
   let radioGroup;
 
   onMount(async () => {
     $cars = "Eve";
   });
+
+  const handleSubmit = () => {
+    console.log(inputValue);
+  };
 </script>
 
 <svelte:head>
@@ -38,7 +43,7 @@
   <Form>
     <FormGroup>
       <Label for="exampleEmail">Plain Text (Static)</Label>
-      <Input plaintext value="Some plain text/ static value" />
+      <Input plaintext bind:value={inputValue} />
     </FormGroup>
     <FormGroup>
       <Label for="exampleEmail">Email</Label>
@@ -203,7 +208,7 @@
     </FormGroup>
   </Form>
 
-  <Button color="primary" outline>Hello World!</Button>
+  <Button color="primary" outline on:click={handleSubmit}>Hello World!</Button>
 </div>
 
 <style>
