@@ -1,6 +1,6 @@
 {
-    "name": "my-app",
-    "private": true,
+    "name": "svelte-starter",
+    "private": false,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
