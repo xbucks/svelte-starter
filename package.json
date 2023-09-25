@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "husky": "^8.0.3",
     "svelte": "^4.2.1",
     "sveltestrap": "^5.11.2",
     "vite": "^4.4.5"
