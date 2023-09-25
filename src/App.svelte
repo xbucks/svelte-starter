@@ -1,4 +1,5 @@
 <script>
+  import { Button } from 'sveltestrap'
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
@@ -26,6 +27,7 @@
   <p class="read-the-docs">
     Click on the Vite and Svelte logos to learn more
   </p>
+  <Button color="primary" outline>Hello World!</Button>
 </main>
 
 <style>
