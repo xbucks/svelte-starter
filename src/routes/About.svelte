@@ -1,15 +1,6 @@
 <script>
-  import { Form, FormGroup, FormText, Input, Label } from "sveltestrap";
-  import {
-    amountOfCoolPoints,
-    timeBasedLevel,
-    timeBasedCoolPoints,
-  } from "src/store";
-
-  let level;
-  timeBasedLevel.subscribe((v) => {
-    level = v;
-  });
+  import { FormGroup, Input, Label } from "sveltestrap";
+  import { amountOfCoolPoints } from "src/store";
 
   const handleInput = (e) => {
     amountOfCoolPoints.set(e.target.value);
