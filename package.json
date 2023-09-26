@@ -1,26 +1,27 @@
 {
-	"name": "svelte-starter",
-	"private": false,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "husky install"
-	},
-	"devDependencies": {
-		"@sveltejs/kit": "^1.25.1",
-		"@sveltejs/vite-plugin-svelte": "^2.4.2",
-		"husky": "^8.0.3",
-		"lint-staged": "^14.0.1",
-		"prettier": "3.0.3",
-		"svelte": "^4.2.1",
-		"svelte-routing": "^2.4.0",
-		"sveltestrap": "^5.11.2",
-		"vite": "^4.4.5"
-	},
-	"lint-staged": {
-		"**/*": "prettier --write --ignore-unknown"
-	}
+  "name": "svelte-starter",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "^1.25.1",
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-svelte": "^3.0.3",
+    "svelte": "^4.2.1",
+    "svelte-routing": "^2.4.0",
+    "sveltestrap": "^5.11.2",
+    "vite": "^4.4.5"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write . --ignore-unknown"
+  }
 }
