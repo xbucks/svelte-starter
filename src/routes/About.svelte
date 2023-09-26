@@ -1,6 +1,6 @@
 <script>
   import { FormGroup, Input, Label } from "sveltestrap";
-  import { amountOfCoolPoints } from "src/store";
+  import { amountOfCoolPoints } from "src/stores/users";
 
   const handleInput = (e) => {
     amountOfCoolPoints.set(e.target.value);

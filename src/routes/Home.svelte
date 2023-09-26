@@ -3,7 +3,7 @@
     amountOfCoolPoints,
     timeBasedLevel,
     timeBasedCoolPoints,
-  } from "src/store";
+  } from "src/stores/users";
 
   // Subscription method
   let level;
