@@ -16,6 +16,7 @@
         "lint-staged": "^14.0.1",
         "prettier": "3.0.3",
         "svelte": "^4.2.1",
+        "svelte-routing": "^2.4.0",
         "sveltestrap": "^5.11.2",
         "vite": "^4.4.5"
     },
