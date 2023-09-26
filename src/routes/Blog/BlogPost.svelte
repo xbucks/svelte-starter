@@ -3,7 +3,7 @@
 
     import { Button } from 'sveltestrap'
     import { navigate } from "svelte-routing"
-    import Counter from '../../lib/Counter.svelte'
+    import Counter from 'src/lib/Counter.svelte'
 
     const gotohome = () => {
         navigate("/", { replace: true })

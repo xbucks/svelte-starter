@@ -1,10 +1,10 @@
 <!-- App.svelte -->
 <script>
   import { Router, Link, Route } from "svelte-routing";
-  import Home from "./routes/Home.svelte";
-  import About from "./routes/About.svelte";
-  import Blog from "./routes/Blog/Blog.svelte";
-  import BlogPost from "./routes/Blog/BlogPost.svelte";
+  import Home from "src/routes/Home.svelte";
+  import About from "src/routes/About.svelte";
+  import Blog from "src/routes/Blog/Blog.svelte";
+  import BlogPost from "src/routes/Blog/BlogPost.svelte";
 
   export let url = "";
 </script>
