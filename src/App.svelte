@@ -8,6 +8,7 @@
   import BlogPost from "src/routes/Blog/BlogPost.svelte";
   import Login from "src/routes/Login.svelte";
   import Register from "src/routes/Register.svelte";
+  import "./styles/Root.scss";
 
   export let url = "";
 </script>
