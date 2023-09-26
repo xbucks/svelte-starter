@@ -1,9 +1,9 @@
 <script>
   import { FormGroup, Input, Label } from "sveltestrap";
-  import { amountOfCoolPoints } from "src/stores/users";
+  import { token } from "src/stores/app";
 
   const handleInput = (e) => {
-    amountOfCoolPoints.set(e.target.value);
+    token.set(e.target.value);
   };
 </script>
 

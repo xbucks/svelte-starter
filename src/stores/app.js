@@ -1,12 +1,8 @@
 import { writable, readable, derived } from "svelte/store";
+import { persist, createLocalStorage } from "@macfja/svelte-persistent-store";
 
-export const token = writable("");
-
-export const timeBasedLevel = readable(1, (update) => {
-  const interval = setInterval(() => {
-    const nVal = Math.floor(Math.random() * 10);
-    update(nVal);
-  }, 1000);
-
-  return () => clearInterval(interval);
-});
+export const token = persist(
+  writable("dl29jfl2kdbdlr"),
+  createLocalStorage(),
+  "token",
+);
